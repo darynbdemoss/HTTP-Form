@@ -1,19 +1,35 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="searchForm" method="GET">
+      <input id="searchText" type="text" name="q" placeholder="search term" />
 
-<head>
-	<meta charset="utf-8">
-	<script>
-		// TODO: create a handler
-    window.addEventListener("load", function(){
-        // TODO: register the handler
-    });
-	</script>
-</head>
+      <label
+        ><input
+          type="radio"
+          name="engine"
+          value="google"
+          checked="true"
+        />google</label
+      >
+      <label
+        ><input
+          type="radio"
+          name="engine"
+          value="duckDuckGo"
+        />duckDuckGo</label
+      >
+      <label><input type="radio" name="engine" value="bing" />bing</label>
+      <label><input type="radio" name="engine" value="ask" />ask</label>
 
-<body>
+      <button>Go!</button>
+    </form>
 
-	<form id="searchForm">
-    <!-- TODO: add form elements -->
-	</form>
-
-</body>
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>
